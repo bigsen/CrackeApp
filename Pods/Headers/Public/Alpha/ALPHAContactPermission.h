@@ -1,0 +1,1 @@
+../../../Alpha/Alpha/Plugins/Permission/Model/ALPHAContactPermission.h

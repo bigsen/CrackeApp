@@ -1,0 +1,1 @@
+../../../Alpha/Alpha/Plugins/Touch/Library/ALPHATouchWindow.h

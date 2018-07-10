@@ -1,0 +1,9 @@
+{
+    "content": {
+        "selffilter": {
+         "type" : 0,
+         "intensity": 0.45
+        }
+    },
+    "version": "1.1"
+}

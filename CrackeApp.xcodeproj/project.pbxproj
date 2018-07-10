@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6344EDD20F30B920052A498 /* 抖音短视频.ipa in Resources */ = {isa = PBXBuildFile; fileRef = A6344EDC20F30B920052A498 /* 抖音短视频.ipa */; };
+		A6344EE020F343B60052A498 /* UIWindow+CMFLEXSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = A6344EDE20F343B60052A498 /* UIWindow+CMFLEXSetting.h */; };
+		A6344EE120F343B60052A498 /* UIWindow+CMFLEXSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = A6344EDF20F343B60052A498 /* UIWindow+CMFLEXSetting.m */; };
+		A6EEAEAD20EFB41200BBE558 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6EEAEAC20EFB41200BBE558 /* MDConfig.plist */; };
+		A6EEAEB720EFB41200BBE558 /* libCrackeAppDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6EEAEB620EFB41200BBE558 /* libCrackeAppDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A6EEAEBC20EFB41200BBE558 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EEAEBB20EFB41200BBE558 /* JavaScriptCore.framework */; };
+		A6EEAEBE20EFB41200BBE558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EEAEBD20EFB41200BBE558 /* Foundation.framework */; };
+		A6EEAEC020EFB41200BBE558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EEAEBF20EFB41200BBE558 /* UIKit.framework */; };
+		A6EEAEC520EFB41200BBE558 /* CrackeAppDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAEC420EFB41200BBE558 /* CrackeAppDylib.mm */; };
+		A6EEAEC820EFB41200BBE558 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EEAEC720EFB41200BBE558 /* MDConfigManager.h */; };
+		A6EEAECA20EFB41200BBE558 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAEC920EFB41200BBE558 /* MDConfigManager.m */; };
+		A6EEAECC20EFB41200BBE558 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EEAECB20EFB41200BBE558 /* MDCycriptManager.h */; };
+		A6EEAECE20EFB41200BBE558 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAECD20EFB41200BBE558 /* MDCycriptManager.m */; };
+		A6EEAED020EFB41200BBE558 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EEAECF20EFB41200BBE558 /* MDMethodTrace.h */; };
+		A6EEAED220EFB41200BBE558 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAED120EFB41200BBE558 /* MDMethodTrace.m */; };
+		A6EEAED420EFB41200BBE558 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EEAED320EFB41200BBE558 /* ANYMethodLog.h */; };
+		A6EEAED620EFB41200BBE558 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAED520EFB41200BBE558 /* ANYMethodLog.m */; };
+		A6EEAED920EFB41200BBE558 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EEAED820EFB41200BBE558 /* LLDBTools.h */; };
+		A6EEAEDB20EFB41200BBE558 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAEDA20EFB41200BBE558 /* LLDBTools.mm */; };
+		A6EEAEE020EFB41200BBE558 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAEDF20EFB41200BBE558 /* AntiAntiDebug.m */; };
+		A6EEAEE320EFB41200BBE558 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAEE220EFB41200BBE558 /* fishhook.c */; };
+		A6EEAEE520EFB41200BBE558 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EEAEE420EFB41200BBE558 /* fishhook.h */; };
+		A6EEAEE720EFB41200BBE558 /* CrackeAppDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EEAEE620EFB41200BBE558 /* CrackeAppDylib.h */; };
+		A6EEAEE920EFB41200BBE558 /* CrackeAppDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EEAEE820EFB41200BBE558 /* CrackeAppDylib.m */; };
+		BD8AE579F445EBF0B76BD522 /* libPods-CrackeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDE2F35D6F4A42C9F10EA39 /* libPods-CrackeApp.a */; };
+		C26B0F902F88ABFB8824398E /* libPods-CrackeAppDylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2656EA4BBFD022AFF09E5F /* libPods-CrackeAppDylib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6EEAEB820EFB41200BBE558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6EEAE9920EFB41200BBE558 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6EEAEB520EFB41200BBE558;
+			remoteInfo = CrackeAppDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6EEAEA120EFB41200BBE558 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6EEAEB720EFB41200BBE558 /* libCrackeAppDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		39CD6D6AAAC6DD27D78207A5 /* Pods-CrackeAppDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrackeAppDylib.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrackeAppDylib/Pods-CrackeAppDylib.release.xcconfig"; sourceTree = "<group>"; };
+		47BED294B932FDAC53A69BCD /* Pods-CrackeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrackeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrackeApp/Pods-CrackeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4C975CBF350810786D0F0A6A /* Pods-CrackeAppDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrackeAppDylib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrackeAppDylib/Pods-CrackeAppDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		7CDE2F35D6F4A42C9F10EA39 /* libPods-CrackeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrackeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0098418E523A3ED86109B4 /* Pods-CrackeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrackeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrackeApp/Pods-CrackeApp.release.xcconfig"; sourceTree = "<group>"; };
+		A6344EDC20F30B920052A498 /* 抖音短视频.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; name = "抖音短视频.ipa"; path = "TargetApp/抖音短视频.ipa"; sourceTree = "<group>"; };
+		A6344EDE20F343B60052A498 /* UIWindow+CMFLEXSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CMFLEXSetting.h"; sourceTree = "<group>"; };
+		A6344EDF20F343B60052A498 /* UIWindow+CMFLEXSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CMFLEXSetting.m"; sourceTree = "<group>"; };
+		A6EEAEA420EFB41200BBE558 /* CrackeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrackeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EEAEA720EFB41200BBE558 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		A6EEAEA820EFB41200BBE558 /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
+		A6EEAEAA20EFB41200BBE558 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		A6EEAEAC20EFB41200BBE558 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		A6EEAEAF20EFB41200BBE558 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		A6EEAEB020EFB41200BBE558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6EEAEB620EFB41200BBE558 /* libCrackeAppDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCrackeAppDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EEAEBB20EFB41200BBE558 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		A6EEAEBD20EFB41200BBE558 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6EEAEBF20EFB41200BBE558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6EEAEC320EFB41200BBE558 /* CrackeAppDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = CrackeAppDylib.xm; path = Logos/CrackeAppDylib.xm; sourceTree = "<group>"; };
+		A6EEAEC420EFB41200BBE558 /* CrackeAppDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = CrackeAppDylib.mm; path = Logos/CrackeAppDylib.mm; sourceTree = "<group>"; };
+		A6EEAEC720EFB41200BBE558 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		A6EEAEC920EFB41200BBE558 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		A6EEAECB20EFB41200BBE558 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		A6EEAECD20EFB41200BBE558 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		A6EEAECF20EFB41200BBE558 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		A6EEAED120EFB41200BBE558 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		A6EEAED320EFB41200BBE558 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = Config/ANYMethodLog.h; sourceTree = "<group>"; };
+		A6EEAED520EFB41200BBE558 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = Config/ANYMethodLog.m; sourceTree = "<group>"; };
+		A6EEAED820EFB41200BBE558 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		A6EEAEDA20EFB41200BBE558 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		A6EEAEDD20EFB41200BBE558 /* CrackeAppDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrackeAppDylib-Prefix.pch"; sourceTree = "<group>"; };
+		A6EEAEDF20EFB41200BBE558 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		A6EEAEE220EFB41200BBE558 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		A6EEAEE420EFB41200BBE558 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		A6EEAEE620EFB41200BBE558 /* CrackeAppDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrackeAppDylib.h; sourceTree = "<group>"; };
+		A6EEAEE820EFB41200BBE558 /* CrackeAppDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrackeAppDylib.m; sourceTree = "<group>"; };
+		AF2656EA4BBFD022AFF09E5F /* libPods-CrackeAppDylib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrackeAppDylib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6EEAE9E20EFB41200BBE558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8AE579F445EBF0B76BD522 /* libPods-CrackeApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EEAEB320EFB41200BBE558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EEAEBC20EFB41200BBE558 /* JavaScriptCore.framework in Frameworks */,
+				A6EEAEC020EFB41200BBE558 /* UIKit.framework in Frameworks */,
+				A6EEAEBE20EFB41200BBE558 /* Foundation.framework in Frameworks */,
+				C26B0F902F88ABFB8824398E /* libPods-CrackeAppDylib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6EEAE9820EFB41200BBE558 = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEA620EFB41200BBE558 /* CrackeApp */,
+				A6EEAEC120EFB41200BBE558 /* CrackeAppDylib */,
+				A6EEAEBA20EFB41200BBE558 /* Frameworks */,
+				A6EEAEA520EFB41200BBE558 /* Products */,
+				EFE8000AB1D090673096CA4C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A6EEAEA520EFB41200BBE558 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEA420EFB41200BBE558 /* CrackeApp.app */,
+				A6EEAEB620EFB41200BBE558 /* libCrackeAppDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6EEAEA620EFB41200BBE558 /* CrackeApp */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEA720EFB41200BBE558 /* icon.png */,
+				A6EEAEA820EFB41200BBE558 /* Target.plist */,
+				A6EEAEB020EFB41200BBE558 /* Info.plist */,
+				A6EEAEA920EFB41200BBE558 /* Scripts */,
+				A6EEAEAB20EFB41200BBE558 /* Config */,
+				A6EEAEAE20EFB41200BBE558 /* TargetApp */,
+			);
+			path = CrackeApp;
+			sourceTree = "<group>";
+		};
+		A6EEAEA920EFB41200BBE558 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEAA20EFB41200BBE558 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		A6EEAEAB20EFB41200BBE558 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEAC20EFB41200BBE558 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		A6EEAEAE20EFB41200BBE558 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				A6344EDC20F30B920052A498 /* 抖音短视频.ipa */,
+				A6EEAEAF20EFB41200BBE558 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		A6EEAEBA20EFB41200BBE558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEBB20EFB41200BBE558 /* JavaScriptCore.framework */,
+				A6EEAEBD20EFB41200BBE558 /* Foundation.framework */,
+				A6EEAEBF20EFB41200BBE558 /* UIKit.framework */,
+				7CDE2F35D6F4A42C9F10EA39 /* libPods-CrackeApp.a */,
+				AF2656EA4BBFD022AFF09E5F /* libPods-CrackeAppDylib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6EEAEC120EFB41200BBE558 /* CrackeAppDylib */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEE620EFB41200BBE558 /* CrackeAppDylib.h */,
+				A6EEAEE820EFB41200BBE558 /* CrackeAppDylib.m */,
+				A6344EDE20F343B60052A498 /* UIWindow+CMFLEXSetting.h */,
+				A6344EDF20F343B60052A498 /* UIWindow+CMFLEXSetting.m */,
+				A6EEAEC220EFB41200BBE558 /* Logos */,
+				A6EEAEC620EFB41200BBE558 /* Config */,
+				A6EEAED720EFB41200BBE558 /* Tools */,
+				A6EEAEDE20EFB41200BBE558 /* AntiAntiDebug */,
+				A6EEAEE120EFB41200BBE558 /* fishhook */,
+				A6EEAEDC20EFB41200BBE558 /* Supporting Files */,
+			);
+			path = CrackeAppDylib;
+			sourceTree = "<group>";
+		};
+		A6EEAEC220EFB41200BBE558 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEC320EFB41200BBE558 /* CrackeAppDylib.xm */,
+				A6EEAEC420EFB41200BBE558 /* CrackeAppDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		A6EEAEC620EFB41200BBE558 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEC720EFB41200BBE558 /* MDConfigManager.h */,
+				A6EEAEC920EFB41200BBE558 /* MDConfigManager.m */,
+				A6EEAECB20EFB41200BBE558 /* MDCycriptManager.h */,
+				A6EEAECD20EFB41200BBE558 /* MDCycriptManager.m */,
+				A6EEAECF20EFB41200BBE558 /* MDMethodTrace.h */,
+				A6EEAED120EFB41200BBE558 /* MDMethodTrace.m */,
+				A6EEAED320EFB41200BBE558 /* ANYMethodLog.h */,
+				A6EEAED520EFB41200BBE558 /* ANYMethodLog.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		A6EEAED720EFB41200BBE558 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAED820EFB41200BBE558 /* LLDBTools.h */,
+				A6EEAEDA20EFB41200BBE558 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		A6EEAEDC20EFB41200BBE558 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEDD20EFB41200BBE558 /* CrackeAppDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6EEAEDE20EFB41200BBE558 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEDF20EFB41200BBE558 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		A6EEAEE120EFB41200BBE558 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEAEE220EFB41200BBE558 /* fishhook.c */,
+				A6EEAEE420EFB41200BBE558 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		EFE8000AB1D090673096CA4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47BED294B932FDAC53A69BCD /* Pods-CrackeApp.debug.xcconfig */,
+				9C0098418E523A3ED86109B4 /* Pods-CrackeApp.release.xcconfig */,
+				4C975CBF350810786D0F0A6A /* Pods-CrackeAppDylib.debug.xcconfig */,
+				39CD6D6AAAC6DD27D78207A5 /* Pods-CrackeAppDylib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A6EEAEB420EFB41200BBE558 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EEAECC20EFB41200BBE558 /* MDCycriptManager.h in Headers */,
+				A6EEAED020EFB41200BBE558 /* MDMethodTrace.h in Headers */,
+				A6EEAED920EFB41200BBE558 /* LLDBTools.h in Headers */,
+				A6EEAEC820EFB41200BBE558 /* MDConfigManager.h in Headers */,
+				A6344EE020F343B60052A498 /* UIWindow+CMFLEXSetting.h in Headers */,
+				A6EEAED420EFB41200BBE558 /* ANYMethodLog.h in Headers */,
+				A6EEAEE520EFB41200BBE558 /* fishhook.h in Headers */,
+				A6EEAEE720EFB41200BBE558 /* CrackeAppDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A6EEAEA320EFB41200BBE558 /* CrackeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6EEAEEF20EFB41200BBE558 /* Build configuration list for PBXNativeTarget "CrackeApp" */;
+			buildPhases = (
+				0FA1B40B88D2FB619E8C771C /* [CP] Check Pods Manifest.lock */,
+				A6EEAE9D20EFB41200BBE558 /* Sources */,
+				A6EEAE9E20EFB41200BBE558 /* Frameworks */,
+				A6EEAE9F20EFB41200BBE558 /* ShellScript */,
+				A6EEAEA020EFB41200BBE558 /* Resources */,
+				A6EEAEA120EFB41200BBE558 /* CopyFiles */,
+				A6EEAEA220EFB41200BBE558 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6EEAEB920EFB41200BBE558 /* PBXTargetDependency */,
+			);
+			name = CrackeApp;
+			productName = CrackeApp;
+			productReference = A6EEAEA420EFB41200BBE558 /* CrackeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6EEAEB520EFB41200BBE558 /* CrackeAppDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6EEAEEC20EFB41200BBE558 /* Build configuration list for PBXNativeTarget "CrackeAppDylib" */;
+			buildPhases = (
+				922A6369D82055EF94E91EC3 /* [CP] Check Pods Manifest.lock */,
+				A6EEAEB120EFB41200BBE558 /* ShellScript */,
+				A6EEAEB220EFB41200BBE558 /* Sources */,
+				A6EEAEB320EFB41200BBE558 /* Frameworks */,
+				A6EEAEB420EFB41200BBE558 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrackeAppDylib;
+			productName = CrackeAppDylib;
+			productReference = A6EEAEB620EFB41200BBE558 /* libCrackeAppDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6EEAE9920EFB41200BBE558 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = sen;
+				TargetAttributes = {
+					A6EEAEA320EFB41200BBE558 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					A6EEAEB520EFB41200BBE558 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A6EEAE9C20EFB41200BBE558 /* Build configuration list for PBXProject "CrackeApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A6EEAE9820EFB41200BBE558;
+			productRefGroup = A6EEAEA520EFB41200BBE558 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6EEAEA320EFB41200BBE558 /* CrackeApp */,
+				A6EEAEB520EFB41200BBE558 /* CrackeAppDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6EEAEA020EFB41200BBE558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6344EDD20F30B920052A498 /* 抖音短视频.ipa in Resources */,
+				A6EEAEAD20EFB41200BBE558 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FA1B40B88D2FB619E8C771C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrackeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		922A6369D82055EF94E91EC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrackeAppDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6EEAE9F20EFB41200BBE558 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		A6EEAEA220EFB41200BBE558 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		A6EEAEB120EFB41200BBE558 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6EEAE9D20EFB41200BBE558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EEAEB220EFB41200BBE558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EEAECE20EFB41200BBE558 /* MDCycriptManager.m in Sources */,
+				A6EEAED620EFB41200BBE558 /* ANYMethodLog.m in Sources */,
+				A6EEAEE920EFB41200BBE558 /* CrackeAppDylib.m in Sources */,
+				A6EEAECA20EFB41200BBE558 /* MDConfigManager.m in Sources */,
+				A6EEAEDB20EFB41200BBE558 /* LLDBTools.mm in Sources */,
+				A6344EE120F343B60052A498 /* UIWindow+CMFLEXSetting.m in Sources */,
+				A6EEAEC520EFB41200BBE558 /* CrackeAppDylib.mm in Sources */,
+				A6EEAED220EFB41200BBE558 /* MDMethodTrace.m in Sources */,
+				A6EEAEE320EFB41200BBE558 /* fishhook.c in Sources */,
+				A6EEAEE020EFB41200BBE558 /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6EEAEB920EFB41200BBE558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6EEAEB520EFB41200BBE558 /* CrackeAppDylib */;
+			targetProxy = A6EEAEB820EFB41200BBE558 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A6EEAEEA20EFB41200BBE558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6EEAEEB20EFB41200BBE558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6EEAEED20EFB41200BBE558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C975CBF350810786D0F0A6A /* Pods-CrackeAppDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7FV3TKFKV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrackeAppDylib/CrackeAppDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libCrackeAppDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"CrackeAppDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		A6EEAEEE20EFB41200BBE558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39CD6D6AAAC6DD27D78207A5 /* Pods-CrackeAppDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = U7FV3TKFKV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrackeAppDylib/CrackeAppDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libCrackeAppDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"CrackeAppDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6EEAEF020EFB41200BBE558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47BED294B932FDAC53A69BCD /* Pods-CrackeApp.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7FV3TKFKV;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CrackeApp/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrackeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6EEAEF120EFB41200BBE558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0098418E523A3ED86109B4 /* Pods-CrackeApp.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7FV3TKFKV;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CrackeApp/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrackeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6EEAE9C20EFB41200BBE558 /* Build configuration list for PBXProject "CrackeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EEAEEA20EFB41200BBE558 /* Debug */,
+				A6EEAEEB20EFB41200BBE558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6EEAEEC20EFB41200BBE558 /* Build configuration list for PBXNativeTarget "CrackeAppDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EEAEED20EFB41200BBE558 /* Debug */,
+				A6EEAEEE20EFB41200BBE558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6EEAEEF20EFB41200BBE558 /* Build configuration list for PBXNativeTarget "CrackeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EEAEF020EFB41200BBE558 /* Debug */,
+				A6EEAEF120EFB41200BBE558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6EEAE9920EFB41200BBE558 /* Project object */;
+}

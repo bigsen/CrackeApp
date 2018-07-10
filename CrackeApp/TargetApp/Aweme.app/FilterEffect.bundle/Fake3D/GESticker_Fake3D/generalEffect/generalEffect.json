@@ -1,0 +1,22 @@
+{
+    "effect": [
+               {
+               "name": "Fake3D",
+               "vertexShader": "resource1/vshader.vsh",
+               "vUniforms": [],
+               "fragmentShader": "resource1/fshader.fsh",
+               "fUniforms": [
+                             {
+                             "name": "scale",
+                             "type": 3,
+                             "resource": "resource1/scaleData.json"
+                             },
+                             {
+                             "name": "inputImageTexture",
+                             "type": 100
+                             }
+                             ]
+               }
+               ],
+    "version" : 1.1
+}

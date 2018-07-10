@@ -1,0 +1,10 @@
+#include "Configuration/Common.xcconfig"
+
+// Code Signing
+CODE_SIGN_IDENTITY = iPhone Developer
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
+PROVISIONING_PROFILE =
+PROVISIONING_PROFILE_SPECIFIER =
+
+// Micros
+GCC_PREPROCESSOR_DEFINITIONS = $(AWE_MICROS_DEBUG)

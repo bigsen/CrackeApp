@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SinfPaths</key>
+	<array>
+		<string>SC_Info/Aweme.sinf</string>
+	</array>
+	<key>SinfReplicationPaths</key>
+	<array>
+		<string>PlugIns/AWEVideoWidget.appex/SC_Info/AWEVideoWidget.sinf</string>
+		<string>PlugIns/AwemeNotificationService.appex/SC_Info/AwemeNotificationService.sinf</string>
+		<string>PlugIns/AwemeVideoNotification.appex/SC_Info/AwemeVideoNotification.sinf</string>
+		<string>SC_Info/Aweme.sinf</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,11 @@
+{
+    "tag": "2DSticker_none",
+    "version": "1.0",
+    "requirement": {
+        "faceDetect": false,
+        "matting": false
+    },
+    "content": {
+        "path" : "none.json"
+    }
+}

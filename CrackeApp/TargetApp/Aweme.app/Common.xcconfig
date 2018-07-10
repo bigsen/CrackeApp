@@ -1,0 +1,251 @@
+#include "Configuration/MicroDefinitions.xcconfig"
+
+// Version Control
+AWE_VERSION_NUMBER    = 1.9.0
+AWE_BUILD_NUMBER      = 19007
+TIKTOK_VERSION_NUMBER = 2.5.0
+TIKTOK_BUILD_NUMBER   = 25001
+MUSICALLY_VERSION_NUMBER = 7.5.0
+MUSICALLY_BUILD_NUMBER   = 75001
+
+// Configuraion Merge
+CONFIGURATION_GROUP_AwemeDebug           = Aweme
+CONFIGURATION_GROUP_AwemeRelease         = Aweme
+CONFIGURATION_GROUP_AwemeInhouseDebug    = AwemeInhouse
+CONFIGURATION_GROUP_AwemeInhouseRelease  = AwemeInhouse
+CONFIGURATION_GROUP_AwemeAdHoc           = Aweme
+CONFIGURATION_GROUP_ppRelease            = Aweme
+CONFIGURATION_GROUP_TikTokDebug          = TikTok
+CONFIGURATION_GROUP_TikTokRelease        = TikTok
+CONFIGURATION_GROUP_TikTokInhouseDebug   = TikTokInhouse
+CONFIGURATION_GROUP_TikTokInhouseRelease = TikTokInhouse
+CONFIGURATION_GROUP_MusicallyDebug          = Musically
+CONFIGURATION_GROUP_MusicallyRelease        = Musically
+CONFIGURATION_GROUP_MusicallyInhouseDebug   = MusicallyInhouse
+CONFIGURATION_GROUP_MusicallyInhouseRelease = MusicallyInhouse
+CONFIGURATION_GROUP_MusicallyPerformance = MusicallyPerformance
+
+CONFIGURATION_GROUP = $(CONFIGURATION_GROUP_$(CONFIGURATION))
+
+// Configuration Environment
+CONFIGURATION_TYPE_AwemeDebug           = Others
+CONFIGURATION_TYPE_AwemeRelease         = Others
+CONFIGURATION_TYPE_AwemeInhouseDebug    = Inhouse
+CONFIGURATION_TYPE_AwemeInhouseRelease  = Inhouse
+CONFIGURATION_TYPE_AwemeAdHoc           = Others
+CONFIGURATION_TYPE_ppRelease            = Others
+CONFIGURATION_TYPE_TikTokDebug          = Others
+CONFIGURATION_TYPE_TikTokRelease        = Others
+CONFIGURATION_TYPE_TikTokInhouseDebug   = Inhouse
+CONFIGURATION_TYPE_TikTokInhouseRelease = Inhouse
+CONFIGURATION_TYPE_MusicallyDebug          = Others
+CONFIGURATION_TYPE_MusicallyRelease        = Others
+CONFIGURATION_TYPE_MusicallyInhouseDebug   = Inhouse
+CONFIGURATION_TYPE_MusicallyInhouseRelease = Inhouse
+CONFIGURATION_TYPE_MusicallyPerformance    = Inhouse
+
+CONFIGURATION_TYPE = $(CONFIGURATION_TYPE_$(CONFIGURATION))
+
+// Version Mapping
+VERSION_NUMBER_Aweme = $(AWE_VERSION_NUMBER)
+VERSION_NUMBER_AwemeInhouse = $(AWE_VERSION_NUMBER)
+VERSION_NUMBER_TikTok = $(TIKTOK_VERSION_NUMBER)
+VERSION_NUMBER_TikTokInhouse = $(TIKTOK_VERSION_NUMBER)
+VERSION_NUMBER_Musically = $(MUSICALLY_VERSION_NUMBER)
+VERSION_NUMBER_MusicallyInhouse = $(MUSICALLY_VERSION_NUMBER)
+VERSION_NUMBER_MusicallyPerformance = $(MUSICALLY_VERSION_NUMBER)
+
+BUILD_NUMBER_Aweme = $(AWE_BUILD_NUMBER)
+BUILD_NUMBER_AwemeInhouse = $(AWE_BUILD_NUMBER)
+BUILD_NUMBER_TikTok = $(TIKTOK_BUILD_NUMBER)
+BUILD_NUMBER_TikTokInhouse = $(TIKTOK_BUILD_NUMBER)
+BUILD_NUMBER_Musically = $(MUSICALLY_BUILD_NUMBER)
+BUILD_NUMBER_MusicallyInhouse = $(MUSICALLY_BUILD_NUMBER)
+BUILD_NUMBER_MusicallyPerformance = $(MUSICALLY_BUILD_NUMBER)
+
+VERSION_NUMBER = $(VERSION_NUMBER_$(CONFIGURATION_GROUP))
+BUILD_NUMBER = $(BUILD_NUMBER_$(CONFIGURATION_GROUP))
+
+// Development Team
+DEVELOPMENT_TEAM_Aweme            = 3JTPEA4UU7
+DEVELOPMENT_TEAM_AwemeInhouse     = XXHND5J98K
+DEVELOPMENT_TEAM_TikTok           = MJ797D8U6F
+DEVELOPMENT_TEAM_TikTokInhouse    = X46375UBYG
+DEVELOPMENT_TEAM_Musically        = 4QGCBVR5TL
+DEVELOPMENT_TEAM_MusicallyInhouse = 9M34YP5WSX
+DEVELOPMENT_TEAM_MusicallyPerformance = 9M34YP5WSX
+
+DEVELOPMENT_TEAM = $(DEVELOPMENT_TEAM_$(CONFIGURATION_GROUP))
+
+// Bundle ID
+PRODUCT_BUNDLE_IDENTIFIER_PREFIX_Aweme            = com.ss.iphone.ugc.Aweme
+PRODUCT_BUNDLE_IDENTIFIER_PREFIX_AwemeInhouse     = com.ss.iphone.ugc.AwemeInhouse
+PRODUCT_BUNDLE_IDENTIFIER_PREFIX_TikTok           = com.ss.iphone.ugc.Ame
+PRODUCT_BUNDLE_IDENTIFIER_PREFIX_TikTokInhouse    = com.ss.iphone.ugc.TrillInhouse1
+PRODUCT_BUNDLE_IDENTIFIER_PREFIX_Musically        = com.zhiliaoapp.musically
+PRODUCT_BUNDLE_IDENTIFIER_PREFIX_MusicallyInhouse = com.zhiliaoapp.musically.ep
+PRODUCT_BUNDLE_IDENTIFIER_PREFIX_MusicallyPerformance = com.zhiliaoapp.musically.ep
+
+PRODUCT_BUNDLE_IDENTIFIER_SUFFIX_Aweme                    =
+PRODUCT_BUNDLE_IDENTIFIER_SUFFIX_TikTok                   =
+PRODUCT_BUNDLE_IDENTIFIER_SUFFIX_Musicall                 =
+PRODUCT_BUNDLE_IDENTIFIER_SUFFIX_AwemeVideoNotification   = .VideoPushNotification
+PRODUCT_BUNDLE_IDENTIFIER_SUFFIX_AWEVideoWidget           = .TodayWidget
+PRODUCT_BUNDLE_IDENTIFIER_SUFFIX_AwemeNotificationService = .PushNotificationAttachment
+
+
+PRODUCT_BUNDLE_IDENTIFIER = $(PRODUCT_BUNDLE_IDENTIFIER_PREFIX_$(CONFIGURATION_GROUP))$(PRODUCT_BUNDLE_IDENTIFIER_SUFFIX_$(TARGETNAME))
+
+// Info.plist
+INFOPLIST_FILE_Aweme                    = $(SRCROOT)/Info.plist
+INFOPLIST_FILE_TikTok                   = $(SRCROOT)/AwemeI18n/AwemeI18n-Info.plist
+INFOPLIST_FILE_Musically                = $(SRCROOT)/Musically/Musically-Info.plist
+INFOPLIST_FILE_AwemeVideoNotification   = $(SRCROOT)/AwemeVideoNotification/AwemeVideoNotification-Info.plist
+INFOPLIST_FILE_AWEVideoWidget           = $(SRCROOT)/AWEVideoWidget/AWEVideoWidge.plist
+INFOPLIST_FILE_AwemeNotificationService = $(SRCROOT)/AwemeNotificationService/Info.plist
+
+INFOPLIST_FILE = $(INFOPLIST_FILE_$(TARGETNAME))
+
+// CODE_SIGN_ENTITLEMENTS
+CODE_SIGN_ENTITLEMENTS_Aweme_Others                     = Aweme.entitlements
+CODE_SIGN_ENTITLEMENTS_Aweme_Inhouse                    = $(CODE_SIGN_ENTITLEMENTS_Aweme_Others)
+CODE_SIGN_ENTITLEMENTS_TikTok_Others                    = AwemeI18n/AwemeI18n.entitlements
+CODE_SIGN_ENTITLEMENTS_TikTok_Inhouse                   = $(CODE_SIGN_ENTITLEMENTS_TikTok_Others)
+CODE_SIGN_ENTITLEMENTS_Musically_Others                 = Musically/Musically.entitlements
+CODE_SIGN_ENTITLEMENTS_Musically_Inhouse                = Musically/Musically_ep.entitlements
+CODE_SIGN_ENTITLEMENTS_AwemeVideoNotification_Others    = AwemeVideoNotification/AwemeVideoNotification.entitlements
+CODE_SIGN_ENTITLEMENTS_AwemeVideoNotification_Inhouse   = $(CODE_SIGN_ENTITLEMENTS_AwemeVideoNotification_Others)
+CODE_SIGN_ENTITLEMENTS_AWEVideoWidget_Others            = AWEVideoWidget/AWEVideoWidget.entitlements
+CODE_SIGN_ENTITLEMENTS_AWEVideoWidget_Inhouse           = $(CODE_SIGN_ENTITLEMENTS_AWEVideoWidget_Others)
+CODE_SIGN_ENTITLEMENTS_AwemeNotificationService_Others  = AwemeNotificationService/AwemeNotificationService.entitlements
+CODE_SIGN_ENTITLEMENTS_AwemeNotificationService_Inhouse = $(CODE_SIGN_ENTITLEMENTS_AwemeNotificationService_Others)
+
+CODE_SIGN_ENTITLEMENTS = $(CODE_SIGN_ENTITLEMENTS_$(TARGETNAME)_$(CONFIGURATION_TYPE))
+
+// Bundle display name
+BUNDLE_DISPLAY_NAME_Aweme            = 抖音短视频
+BUNDLE_DISPLAY_NAME_AwemeInhouse     = 抖音短视频内测
+BUNDLE_DISPLAY_NAME_TikTok           = Tik Tok
+BUNDLE_DISPLAY_NAME_TikTokInhouse    = Tik Tok Inhouse
+BUNDLE_DISPLAY_NAME_Musically        = musical.ly
+BUNDLE_DISPLAY_NAME_MusicallyInhouse = musical.ly Inhouse
+BUNDLE_DISPLAY_NAME_MusicallyPerformance = musical.ly Inhouse
+
+BUNDLE_DISPLAY_NAME = $(BUNDLE_DISPLAY_NAME_$(CONFIGURATION_GROUP))
+
+// Product name
+PRODUCT_NAME_Aweme_Aweme                              = Aweme
+PRODUCT_NAME_Aweme_AwemeInhouse                       = AwemeInhouse
+PRODUCT_NAME_Aweme_TikTok                             = Aweme
+PRODUCT_NAME_Aweme_TikTokInhouse                      = AwemeInhouse
+PRODUCT_NAME_Aweme_Musically                          = Aweme
+PRODUCT_NAME_Aweme_MusicallyInhouse                   = AwemeInhouse
+PRODUCT_NAME_Aweme_MusicallyPerformance               = AwemeInhouse
+
+PRODUCT_NAME_TikTok_TikTok                            = AwemeI18n
+PRODUCT_NAME_TikTok_TikTokInhouse                     = AwemeI18nInhouse
+PRODUCT_NAME_TikTok_Aweme                             = AwemeI18n
+PRODUCT_NAME_TikTok_AwemeInhouse                      = AwemeI18nInhouse
+PRODUCT_NAME_TikTok_Musically                         = AwemeI18n
+PRODUCT_NAME_TikTok_MusicallyInhouse                  = AwemeI18nInhouse
+PRODUCT_NAME_TikTok_MusicallyPerformance              = AwemeI18nInhouse
+
+PRODUCT_NAME_Musically_Aweme                          = Musically
+PRODUCT_NAME_Musically_AwemeInhouse                   = MusicallyInhouse
+PRODUCT_NAME_Musically_TikTok                         = Musically
+PRODUCT_NAME_Musically_TikTokInhouse                  = MusicallyInhouse
+PRODUCT_NAME_Musically_Musically                      = Musically
+PRODUCT_NAME_Musically_MusicallyInhouse               = MusicallyInhouse
+PRODUCT_NAME_Musically_MusicallyPerformance           = MusicallyInhouse
+
+PRODUCT_NAME_AwemeVideoNotification_Aweme             = AwemeVideoNotification
+PRODUCT_NAME_AwemeVideoNotification_AwemeInhouse      = AwemeVideoNotification
+PRODUCT_NAME_AwemeVideoNotification_TikTok            = AwemeVideoNotification
+PRODUCT_NAME_AwemeVideoNotification_TikTokInhouse     = AwemeVideoNotification
+PRODUCT_NAME_AwemeVideoNotification_Musically         = AwemeVideoNotification
+PRODUCT_NAME_AwemeVideoNotification_MusicallyInhouse  = AwemeVideoNotification
+PRODUCT_NAME_AwemeVideoNotification_MusicallyPerformance = AwemeVideoNotification
+
+PRODUCT_NAME_AWEVideoWidget_Aweme                     = AWEVideoWidget
+PRODUCT_NAME_AWEVideoWidget_AwemeInhouse              = AWEVideoWidget
+PRODUCT_NAME_AWEVideoWidget_TikTok                    = AWEVideoWidget
+PRODUCT_NAME_AWEVideoWidget_TikTokInhouse             = AWEVideoWidget
+PRODUCT_NAME_AWEVideoWidget_Musically                 = AWEVideoWidget
+PRODUCT_NAME_AWEVideoWidget_MusicallyInhouse          = AWEVideoWidget
+PRODUCT_NAME_AWEVideoWidget_MusicallyPerformance      = AWEVideoWidget
+
+PRODUCT_NAME_AwemeNotificationService_Aweme              = AwemeNotificationService
+PRODUCT_NAME_AwemeNotificationService_AwemeInhouse       = AwemeNotificationService
+PRODUCT_NAME_AwemeNotificationService_TikTok             = AwemeNotificationService
+PRODUCT_NAME_AwemeNotificationService_TikTokInhouse      = AwemeNotificationService
+PRODUCT_NAME_AwemeNotificationService_Musically          = AwemeNotificationService
+PRODUCT_NAME_AwemeNotificationService_MusicallyInhouse   = AwemeNotificationService
+PRODUCT_NAME_AwemeNotificationService_MusicallyPerformance = AwemeNotificationService
+
+PRODUCT_NAME = $(PRODUCT_NAME_$(TARGETNAME)_$(CONFIGURATION_GROUP))
+
+// Channel name
+CHANNEL_NAME_Aweme            = App Store
+CHANNEL_NAME_AwemeInhouse     = test
+CHANNEL_NAME_TikTok           = App Store
+CHANNEL_NAME_TikTokInhouse    = test
+CHANNEL_NAME_Musically        = App Store
+CHANNEL_NAME_MusicallyInhouse = test
+CHANNEL_NAME_MusicallyPerformance = test
+
+CHANNEL_NAME = $(CHANNEL_NAME_$(CONFIGURATION_GROUP))
+
+// Code push key
+CODE_PUSH_KEY_Aweme         = GAS7xKR0tC3OvcpWXsMT3dgg0LyiE16E7piuz
+CODE_PUSH_KEY_AwemeInhouse  = aqBXu-uyeXoip8lScxxq_tqx9ieOE16E7piuz
+CODE_PUSH_KEY_TikTok        = uByLHmAcarJ10xB6sX2d5sQ2CWopaf01fe8e-4e69-45c9-a3f5-0bfdf3747ea8
+CODE_PUSH_KEY_TikTokInhouse = 7y_r1vpUEa3BQFnOwo2sLSIJRuBJaf01fe8e-4e69-45c9-a3f5-0bfdf3747ea8
+CODE_PUSH_KEY_Musically        = uByLHmAcarJ10xB6sX2d5sQ2CWopaf01fe8e-4e69-45c9-a3f5-0bfdf3747ea8
+CODE_PUSH_KEY_MusicallyInhouse = 7y_r1vpUEa3BQFnOwo2sLSIJRuBJaf01fe8e-4e69-45c9-a3f5-0bfdf3747ea8
+CODE_PUSH_KEY_MusicallyPerformance = 7y_r1vpUEa3BQFnOwo2sLSIJRuBJaf01fe8e-4e69-45c9-a3f5-0bfdf3747ea8
+
+CODE_PUSH_KEY = $(CODE_PUSH_KEY_$(CONFIGURATION_GROUP))
+
+// App Groups
+APP_GROUP_NAME_Aweme         = group.$(PRODUCT_BUNDLE_IDENTIFIER_PREFIX_$(CONFIGURATION_GROUP)).extension
+APP_GROUP_NAME_AwemeInhouse  = group.$(PRODUCT_BUNDLE_IDENTIFIER_PREFIX_$(CONFIGURATION_GROUP)).extension
+APP_GROUP_NAME_TikTok        = group.$(PRODUCT_BUNDLE_IDENTIFIER_PREFIX_$(CONFIGURATION_GROUP)).TikTok.Bytemod
+APP_GROUP_NAME_TikTokInhouse = group.$(PRODUCT_BUNDLE_IDENTIFIER_PREFIX_$(CONFIGURATION_GROUP)).extension1
+APP_GROUP_NAME_Musically        = group.com.zhiliaoapp.shared
+APP_GROUP_NAME_MusicallyInhouse = group.eprod.zhiliaoapp.shared
+APP_GROUP_NAME_MusicallyPerformance = group.eprod.zhiliaoapp.shared
+
+APP_GROUP_NAME = $(APP_GROUP_NAME_$(CONFIGURATION_GROUP))
+
+// App Groups 2
+APP_GROUP_NAME2_Aweme            =
+APP_GROUP_NAME2_AwemeInhouse     =
+APP_GROUP_NAME2_TikTok           =
+APP_GROUP_NAME2_TikTokInhouse    =
+APP_GROUP_NAME2_Musically        = group.test.zhiliaoapp.shared
+APP_GROUP_NAME2_MusicallyInhouse = group.etest.zhiliaoapp.shared
+APP_GROUP_NAME2_MusicallyPerformance = group.etest.zhiliaoapp.shared
+
+APP_GROUP_NAME2 = $(APP_GROUP_NAME2_$(CONFIGURATION_GROUP))
+
+
+// App Groups 3
+APP_GROUP_NAME3_Aweme            =
+APP_GROUP_NAME3_AwemeInhouse     =
+APP_GROUP_NAME3_TikTok           =
+APP_GROUP_NAME3_TikTokInhouse    =
+APP_GROUP_NAME3_Musically        = group.dev.zhiliaoapp.shared
+APP_GROUP_NAME3_MusicallyInhouse =
+APP_GROUP_NAME3_MusicallyPerformance =
+
+APP_GROUP_NAME3 = $(APP_GROUP_NAME3_$(CONFIGURATION_GROUP))
+
+//snapchat client ID
+//由于TikTok有一个fake bundle id的机制，因此inhouse使用和线上相同的client ID
+SNAP_CLIENT_ID_TikTok                        = 9cff289b-94e9-4f6b-9642-0b4d571a98cd
+SNAP_CLIENT_ID_TikTokInhouse                 = 9cff289b-94e9-4f6b-9642-0b4d571a98cd
+SNAP_CLIENT_ID_Musically                     = be57ee08-231d-4622-9cad-4e0792363934
+SNAP_CLIENT_ID_MusicallyInhouse              = adcee8a7-d0ca-4c6c-9718-733f56813eb5
+SNAP_CLIENT_ID_MusicallyPerformance          = adcee8a7-d0ca-4c6c-9718-733f56813eb5
+
+SNAP_CLIENT_ID = $(SNAP_CLIENT_ID_$(CONFIGURATION_GROUP))

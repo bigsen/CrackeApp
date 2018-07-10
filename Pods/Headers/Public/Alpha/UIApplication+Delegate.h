@@ -1,0 +1,1 @@
+../../../Alpha/Alpha/Integration/UIApplication+Delegate.h

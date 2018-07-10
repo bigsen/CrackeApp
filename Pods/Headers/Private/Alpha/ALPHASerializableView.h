@@ -1,0 +1,1 @@
+../../../Alpha/Alpha/Plugins/View/Model/ALPHASerializableView.h

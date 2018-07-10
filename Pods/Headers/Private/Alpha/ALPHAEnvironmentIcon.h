@@ -1,0 +1,1 @@
+../../../Alpha/Alpha/Plugins/Bootstrap/Assets/ALPHAEnvironmentIcon.h

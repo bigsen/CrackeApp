@@ -1,0 +1,64 @@
+{
+    "parts": {
+        "eye": {
+            "frameCount": 0,
+            "height": 472,
+            "position": {
+                "positionX": [
+                    {
+                        "index": 74,
+                        "x": 133.106,
+                        "y": 82.191
+                    },
+                    {
+                        "index": 77,
+                        "x": 164.937,
+                        "y": 82.129
+                    }
+                ],
+                "positionY": [
+                ]
+            },
+            "positionRelationType": 1,
+            "positionType": 2,
+            "rotateCenter": [
+                {
+                    "index": 46,
+                    "x": 149.214,
+                    "y": 98.207
+                }
+            ],
+            "scale": {
+                "scaleX": {
+                    "pointA": [
+                        {
+                            "index": 74,
+                            "x": 133.106,
+                            "y": 82.191
+                        }
+                    ],
+                    "pointB": [
+                        {
+                            "index": 77,
+                            "x": 164.937,
+                            "y": 82.129
+                        }
+                    ]
+                },
+                "scaleY": {
+                    "pointA": [
+                    ],
+                    "pointB": [
+                    ]
+                }
+            },
+            "triggerDelay": 0,
+            "triggerLoop": 0,
+            "triggerStop": false,
+            "triggerType": 0,
+            "width": 298,
+            "zPosition": 1
+        }
+    },
+    "version": "1.1"
+}

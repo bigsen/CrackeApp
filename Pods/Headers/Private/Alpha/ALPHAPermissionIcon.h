@@ -1,0 +1,1 @@
+../../../Alpha/Alpha/Plugins/Permission/Assets/ALPHAPermissionIcon.h

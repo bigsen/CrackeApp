@@ -1,0 +1,13 @@
+{
+    "effect": {
+        "Link": [
+            {
+                "type": "2DSticker",
+                "zorder": 10000,
+                "path": "2DSticker_none/"
+            }
+        ]
+    },
+    "name": "2D_none",
+    "version": "1.1"
+}

@@ -1,0 +1,172 @@
+{
+  "distortions" : [
+    {
+      "angle" : 180,
+      "pos" : 23,
+      "min" : 0,
+      "offsetX" : 0.7643678,
+      "offsetY" : -0.3448276,
+      "radiusX" : 3.821429,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 3.821429,
+      "scale" : 0.1
+    },
+    {
+      "angle" : 225,
+      "pos" : 19,
+      "min" : 0,
+      "offsetX" : 0.3,
+      "offsetY" : 0.08,
+      "radiusX" : 4.8,
+      "type" : 2,
+      "max" : 1.009259,
+      "radiusY" : 4.8,
+      "scale" : 0.75
+    },
+    {
+      "angle" : 315,
+      "pos" : 13,
+      "min" : 0,
+      "offsetX" : -0.3,
+      "offsetY" : 0.08,
+      "radiusX" : 4.8,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 4.8,
+      "scale" : 0.7533633
+    },
+    {
+      "angle" : 270,
+      "pos" : 105,
+      "min" : 0,
+      "offsetX" : -0.25,
+      "offsetY" : -0.24,
+      "radiusX" : 0.71,
+      "type" : 1,
+      "max" : 1,
+      "radiusY" : 0.71,
+      "scale" : 4.37
+    },
+    {
+      "angle" : 0,
+      "pos" : 9,
+      "min" : 0,
+      "offsetX" : -0.11,
+      "offsetY" : -0.26,
+      "radiusX" : 6,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 6,
+      "scale" : 0.08071749
+    },
+    {
+      "angle" : 0,
+      "pos" : 74,
+      "min" : 0,
+      "offsetX" : 0.05,
+      "offsetY" : 0,
+      "radiusX" : 1.67,
+      "type" : 1,
+      "max" : 1,
+      "radiusY" : 1.67,
+      "scale" : 5.75
+    },
+    {
+      "angle" : 180,
+      "pos" : 24,
+      "min" : 0,
+      "offsetX" : -0.17,
+      "offsetY" : -0.26,
+      "radiusX" : 6,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 6,
+      "scale" : 0.08
+    },
+    {
+      "angle" : 225,
+      "pos" : 20,
+      "min" : 0,
+      "offsetX" : 0,
+      "offsetY" : 0.03,
+      "radiusX" : 7.43,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 7.43,
+      "scale" : 0.65
+    },
+    {
+      "angle" : 270,
+      "pos" : 104,
+      "min" : 0,
+      "offsetX" : 0.2528736,
+      "offsetY" : -0.2356322,
+      "radiusX" : 0.7142857,
+      "type" : 1,
+      "max" : 1,
+      "radiusY" : 0.7142857,
+      "scale" : 4.372197
+    },
+    {
+      "angle" : 315,
+      "pos" : 12,
+      "min" : 0,
+      "offsetX" : 0,
+      "offsetY" : 0.03,
+      "radiusX" : 7.43,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 7.43,
+      "scale" : 0.65
+    },
+    {
+      "angle" : 0,
+      "pos" : 8,
+      "min" : 0,
+      "offsetX" : 0,
+      "offsetY" : -0.19,
+      "radiusX" : 4.68,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 4.68,
+      "scale" : 0.5515695
+    },
+    {
+      "angle" : 0,
+      "pos" : 77,
+      "min" : 0,
+      "offsetX" : -0.05,
+      "offsetY" : 0,
+      "radiusX" : 1.67,
+      "type" : 1,
+      "max" : 1,
+      "radiusY" : 1.67,
+      "scale" : 5.75
+    },
+    {
+      "angle" : 0,
+      "pos" : 10,
+      "min" : 0,
+      "offsetX" : -0.76,
+      "offsetY" : -0.34,
+      "radiusX" : 3.82,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 3.82,
+      "scale" : 0.1
+    },
+    {
+      "angle" : 180,
+      "pos" : 25,
+      "min" : 0,
+      "offsetX" : 0,
+      "offsetY" : -0.19,
+      "radiusX" : 4.68,
+      "type" : 2,
+      "max" : 1,
+      "radiusY" : 4.68,
+      "scale" : 0.55
+    }
+  ]
+}

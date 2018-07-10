@@ -1,0 +1,57 @@
+#include "Configuration/Common.xcconfig"
+
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Distribution
+
+// Code Sign
+CODE_SIGN_IDENTITY_Aweme             = iPhone Distribution: Beijing Microlive Vision Technology Co., Ltd
+CODE_SIGN_IDENTITY_AwemeInhouse      = iPhone Distribution: Beijing Bytedance Technology Co., Ltd
+CODE_SIGN_IDENTITY_TikTok            = iPhone Distribution: BYTEMOD PTE. LTD.
+CODE_SIGN_IDENTITY_TikTokInhouse     = iPhone Distribution: Beijing Bytedance Network Technology Co., Ltd
+CODE_SIGN_IDENTITY_Musically         = iPhone Distribution: musical.ly inc. (4QGCBVR5TL)
+CODE_SIGN_IDENTITY_MusicallyInhouse  = iPhone Distribution: musical.ly Inc.
+
+CODE_SIGN_IDENTITY = $(CODE_SIGN_IDENTITY_$(CONFIGURATION_GROUP))
+
+// Provisioning Profile
+PROVISIONING_PROFILE_Aweme_AwemeRelease                  = ame_distribution
+PROVISIONING_PROFILE_Aweme_AwemeInhouseRelease           = Aweme_Inhouse_Distribution
+PROVISIONING_PROFILE_Aweme_AwemeAdHoc                    = aweme_adhoc
+PROVISIONING_PROFILE_Aweme_ppRelease                     = $(PROVISIONING_PROFILE_Aweme_AwemeRelease)
+PROVISIONING_PROFILE_TikTok_TikTokRelease                = TikTok_BYTEMOD
+PROVISIONING_PROFILE_TikTok_TikTokInhouseRelease         = TrillInhouse_Main
+PROVISIONING_PROFILE_Musically_MusicallyRelease          = prod-server-appstore
+PROVISIONING_PROFILE_Musically_MusicallyInhouseRelease   = musically prod
+
+PROVISIONING_PROFILE_AWEVideoWidget_AwemeRelease            =            Aweme_TODAY_WIDGET
+PROVISIONING_PROFILE_AWEVideoWidget_AwemeInhouseRelease     =     AwemeInhouse_TODAY_WIDGET
+PROVISIONING_PROFILE_AWEVideoWidget_AwemeAdHoc              =       AwemeAdHoc_TODAY_WIDGET
+PROVISIONING_PROFILE_AWEVideoWidget_TikTokRelease           =   TikTok_BYTEMOD_TODAY_WIDGET
+PROVISIONING_PROFILE_AWEVideoWidget_TikTokInhouseRelease    =    TikTokInhouse_TODAY_WIDGET
+PROVISIONING_PROFILE_AWEVideoWidget_ppRelease               =   $(PROVISIONING_PROFILE_AWEVideoWidget_AwemeRelease)
+PROVISIONING_PROFILE_AWEVideoWidget_MusicallyRelease        =   Musically_Dis_TODAY_WIDGET
+PROVISIONING_PROFILE_AWEVideoWidget_MusicallyInhouseRelease =    MusicallyInhouse_Dis_TODAY_WIDGET
+
+PROVISIONING_PROFILE_AwemeVideoNotification_AwemeRelease         =            Aweme_VIDEO_PUSH_NOTIFICATION
+PROVISIONING_PROFILE_AwemeVideoNotification_AwemeInhouseRelease  =     AwemeInhouse_VIDEO_PUSH_NOTIFICATION
+PROVISIONING_PROFILE_AwemeVideoNotification_AwemeAdHoc           =       AwemeAdHoc_VIDEO_PUSH_NOTIFICATION
+PROVISIONING_PROFILE_AwemeVideoNotification_TikTokRelease        =   TikTok_BYTEMOD_VIDEO_PUSH_NOTIFICATION
+PROVISIONING_PROFILE_AwemeVideoNotification_TikTokInhouseRelease =    TikTokInhouse_VIDEO_PUSH_NOTIFICATION
+PROVISIONING_PROFILE_AwemeVideoNotification_ppRelease            = $(PROVISIONING_PROFILE_AwemeVideoNotification_AwemeRelease)
+PROVISIONING_PROFILE_AwemeVideoNotification_MusicallyRelease        =   Musically_Dis_VIDEO_PUSH_NOTIFICATION
+PROVISIONING_PROFILE_AwemeVideoNotification_MusicallyInhouseRelease =   MusicallyInhouse_Dis_VIDEO_PUSH_NOTIFICATION
+
+PROVISIONING_PROFILE_AwemeNotificationService_AwemeRelease         =           Aweme_PUSH_NOTIFICATION_ATTACHMENT
+PROVISIONING_PROFILE_AwemeNotificationService_AwemeInhouseRelease  =    AwemeInhouse_PUSH_NOTIFICATION_ATTACHMENT
+PROVISIONING_PROFILE_AwemeNotificationService_AwemeAdHoc             =      AwemeAdHoc_PUSH_NOTIFICATION_ATTACHMENT
+PROVISIONING_PROFILE_AwemeNotificationService_TikTokRelease        =  TikTok_BYTEMOD_PUSH_NOTIFICATION_ATTACHMENT
+PROVISIONING_PROFILE_AwemeNotificationService_TikTokInhouseRelease =   TikTokInhouse_PUSH_NOTIFICATION_ATTACHMENT
+PROVISIONING_PROFILE_AwemeNotificationService_ppRelease = $(PROVISIONING_PROFILE_AwemeNotificationService_AwemeRelease)
+PROVISIONING_PROFILE_AwemeNotificationService_MusicallyRelease        =  Musically_Dis_PUSH_NOTIFICATION_ATTACHMENT
+PROVISIONING_PROFILE_AwemeNotificationService_MusicallyInhouseRelease =   MusicallyInhouse_Dis_PUSH_NOTIFICATION_ATTACHMENT
+
+
+PROVISIONING_PROFILE = $(PROVISIONING_PROFILE_$(TARGETNAME)_$(CONFIGURATION))
+PROVISIONING_PROFILE_SPECIFIER = $(PROVISIONING_PROFILE)
+
+// Micros
+GCC_PREPROCESSOR_DEFINITIONS = $(AWE_MICROS_RELEASE)

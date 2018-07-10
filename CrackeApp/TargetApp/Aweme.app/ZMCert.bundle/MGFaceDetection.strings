@@ -1,0 +1,69 @@
+/* 
+  MGFaceDetection.strings
+  MGFaceDetection
+
+  Created by 张英堂 on 15/12/23.
+  Copyright © 2015年 megvii. All rights reserved.
+*/
+
+"face_check_error1" = "请垂直握紧手机";
+"face_check_error2" = "请让我看到您的正脸";
+"face_check_error3" = "请让我看到您的正脸";
+"face_check_error4" = "请让我看到您的正脸";
+"face_check_error5" = "请让光线再亮点";
+"face_check_error6" = "请让光线再暗点";
+"face_check_error7" = "请再靠近一些";
+"face_check_error8" = "请距离屏幕远一些";
+"face_check_error9" = "请避免侧光和背光";
+"face_check_error10" = "请将正脸置于取景框内";
+"face_check_error11" = "没问题，请保持";
+"face_check_error12" = "请勿遮挡眼睛";
+"face_check_error13" = "请勿遮挡嘴";
+
+"face_check_title" = "完成";
+"face_check_title1" = "请将正脸置于取景框内";
+"face_check_title2" = "没问题，请保持";
+"face_check_title3" = "检测完成";
+
+"face_check_eye" = "眨眼";
+"face_check_mouse" = "张嘴";
+"face_check_header_3" = "左右转头";
+"face_check_header_1" = "上下点头";
+
+"zm_init_title" = "芝麻认证";
+"zm_cencel_title" = "取消";
+
+"zm_power_title" = "All Rights Reserved By 芝麻信用";
+
+"zm_verify_success_title" = "认证成功";
+"zm_verify_error_title" = "认证失败";
+
+"zm_verify_error_100" = " ";
+"zm_verify_error_101" = "无法启动相机，请确认摄像头功能完好";
+"zm_verify_error_102" = "缺少手机权限，请开启权限后重试";
+"zm_verify_error_103" = "无法启动人脸识别，请稍后重试";
+"zm_verify_error_104" = "连不上互联网，请连接上互联网后重试";
+"zm_verify_error_105" = "请稍后重试";
+"zm_verify_error_106" = "信息验证失败，请重启程序或设备后重试";
+"zm_verify_error_107" = "请稍后重试";
+"zm_verify_error_108" = "请稍后重试";
+"zm_verify_error_109" = "请稍后重试";
+"zm_verify_error_110" = "请稍后重试";
+
+"zm_verify_error_111" = "没有联网权限，请开启APP的网络权限重试";
+"zm_verify_error_112" = "没有打开相机的权限，请开启权限后重试";
+"zm_verify_error_113" = "无法读取运动数据的权限，请开启权限后重试";
+
+"zm_verify_error_114" = "信息验证失败，请重启程序或设备后重试";
+
+"zm_verify_error_115" = "APP需升级，请更新APP后重试";
+"zm_verify_error_116" = "身份信息错误，请修正后重试";
+"zm_verify_error_117" = "今天的认证次数达到上限，请明天再试";
+"zm_verify_error_118" = "请稍后重试";
+"zm_verify_error_119" = "请稍后重试";
+"zm_verify_error_120" = "信息验证失败，请重启程序或设备后重试";
+
+"zm_verify_error_1" = "您还剩";
+"zm_verify_error_2" = "次认证机会";
+
+"zm_net_load" = "Loading";

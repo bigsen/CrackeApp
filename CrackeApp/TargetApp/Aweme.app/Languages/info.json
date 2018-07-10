@@ -1,0 +1,12 @@
+[
+    {
+        "languageCode": "zh",
+        "displayName": "简体中文",
+        "localizedDisplayName": "简体中文"
+    },
+    {
+        "languageCode": "en",
+        "displayName": "英语",
+        "localizedDisplayName": "English"
+    }
+]

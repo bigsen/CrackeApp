@@ -1,0 +1,1 @@
+../../../Alpha/Alpha/Private/UIApplication+Private.h
